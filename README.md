@@ -129,7 +129,6 @@
 
 
 ----------
-
 **3.修改用户手机号**
 ----------
   * 访问路径：<https://sdk.yunhetong.com/sdk/userInfo/modifyCellNum?token=xxxxxxxx>
@@ -239,9 +238,8 @@
 
 
 ----------
-
 # 合同接口
----
+----------
 **1.根据模版生成合同**
 ----------
  * 访问路径：<https://sdk.yunhetong.com/sdk/contract/templateContract?token=xxxxxxxx>
@@ -581,7 +579,6 @@ signer参数示例：
 |10802     |您没有该操作的权限！   |
  
 ----------
-
 **6.合同作废**
 ----------
  * 访问路径：<https://sdk.yunhetong.com/sdk/contract/invalid?token=xxxxxxxx>
@@ -711,6 +708,7 @@ signer参数示例：
 |10801     |登录异常，请重新登录！| 
 |10802     |您没有该操作的权限！   |
 
+----------
 **8.合同签署状态详情**
 ----------
 * 访问路径：<https://sdk.yunhetong.com/sdk/contract/detail?token=xxxxxxxx>
@@ -807,8 +805,8 @@ signer参数示例：
 * 接口返回： 合同zip流
 
 ----------
-#消息相关说明
----
+# 消息相关说明
+----------
 **1.消息发送**
 ----------
 sdk在合同创建签署等过程中会通过接入方应用注册时填写的接口(https接口)发送消息，以便让接入方平台及时了解合同状态以及进行一些必要的数据记录。
