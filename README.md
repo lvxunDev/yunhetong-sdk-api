@@ -1,7 +1,7 @@
 # 用户相关接口
 ----------
 **1.导入用户信息**
-----------
+
   * 访问路径：<https://sdk.yunhetong.com/sdk/userInfo/addUser>
   * 调用方式：POST
   * 接口说明：对接第一步导入用户信息
@@ -74,7 +74,7 @@
 
 ----------
 **2.获取用户登录凭证token**
-----------
+
   * 访问路径：<https://sdk.yunhetong.com/sdk/token/getToken>
   * 调用方式：POST
   * 接口说明：获取用户登录凭证，除了导入用户和获取用户登录凭证这个两个接口外，其他所有的接口地址后都要跟token参数
@@ -130,7 +130,7 @@
 
 ----------
 **3.修改用户手机号**
-----------
+
   * 访问路径：<https://sdk.yunhetong.com/sdk/userInfo/modifyCellNum?token=xxxxxxxx>
   * 调用方式：POST
   * 接口说明：用户信息变更后，可以调用该接口修改导入到云合同SDK系统中的数据;地址中的token是获取token接口返回的内容
@@ -183,7 +183,7 @@
 
 ----------
 **4.修改用户名**
-----------
+
   * 访问路径：<https://sdk.yunhetong.com/sdk/userInfo/modifyUserName?token=xxxxxxxx>
   * 调用方式：POST
   * 接口说明：用户信息变更后，可以调用该接口修改导入到云合同SDK系统中的数据;地址中的token是获取token接口返回的内容
@@ -241,7 +241,7 @@
 # 合同接口
 ----------
 **1.根据模版生成合同**
-----------
+
  * 访问路径：<https://sdk.yunhetong.com/sdk/contract/templateContract?token=xxxxxxxx>
  * 调用方式：POST
  * 接口说明：根据模版生成合同，功能有：将固定格式字符串替换成指定内容、将固定字符串替换成图片、简单表格操作
@@ -363,7 +363,7 @@ param参数示例：
  
 ----------
 **2.上传文件生成合同**
-----------
+
  * 访问路径：<https://sdk.yunhetong.com/sdk/contract/fileContract?token=xxxxxxxx>
  * 调用方式：POST
  * 接口说明：上传文件生成合同
@@ -423,7 +423,7 @@ param参数示例：
  
 ----------
 **3.添加参与者**
-----------
+
   * 访问路径：<https://sdk.yunhetong.com/sdk/contract/addPartner?token=xxxxxxxx>
   * 调用方式：POST
   * 接口说明：合同创建人才能添加参与者且创建人必须是参与者
@@ -506,12 +506,12 @@ partners参数示例：
 
 ----------
 **4.合同签署**
-----------
+
 针对合同签署，云合同提供了专门的页面，具体请看文档：<https://lvxundev.github.io/yunhetong-sdk-js/>
  
 ----------
 **5.合同自动签署**
-----------
+
  * 访问路径：<https://sdk.yunhetong.com/sdk/contract/signContract?token=xxxxxxxx>
  * 调用方式：POST
  * 接口说明：对接平台方有时需要对某些合同实现自动签署，使用此接口完成自动签署功能，调用者token必须为平台用户
@@ -580,7 +580,7 @@ signer参数示例：
  
 ----------
 **6.合同作废**
-----------
+
  * 访问路径：<https://sdk.yunhetong.com/sdk/contract/invalid?token=xxxxxxxx>
  * 调用方式：POST
  * 接口说明：合同参与者才能作废
@@ -638,7 +638,7 @@ signer参数示例：
 
 ----------
 **7.合同列表**
-----------
+
 * 访问路径：<https://sdk.yunhetong.com/sdk/contract/list?token=xxxxxxxx>
 * 调用方式：GET
 * 接口说明：平台用户才能获取合同列表,返回该应用下已完成、已作废的合同
@@ -710,7 +710,7 @@ signer参数示例：
 
 ----------
 **8.合同签署状态详情**
-----------
+
 * 访问路径：<https://sdk.yunhetong.com/sdk/contract/detail?token=xxxxxxxx>
 * 调用方式：GET
 * 接口说明：平台及参与用户均可查看
@@ -779,7 +779,7 @@ signer参数示例：
 
 ----------
 **9.合同下载**
-----------
+
  * 访问路径：<https://sdk.yunhetong.com/sdk/contract/download?token=xxxxxxxx>
  * 调用方式：GET
  * 接口参数：平台及参与用户均可下载
@@ -806,9 +806,9 @@ signer参数示例：
 
 ----------
 # 消息相关说明
----
-**1.消息发送**
 ----------
+**1.消息发送**
+
 
 sdk在合同创建签署等过程中会通过接入方应用注册时填写的接口(https接口)发送消息，以便让接入方平台及时了解合同状态以及进行一些必要的数据记录。
 
@@ -846,7 +846,7 @@ sdk在合同创建签署等过程中会通过接入方应用注册时填写的�
 
 ----------
 **2.消息返回**
-----------
+
 >接入方平台接收到消息处理完毕后，需要返回处理结果，返回结果也是json字符串。
 ``` java
 	{
